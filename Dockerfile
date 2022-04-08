@@ -67,4 +67,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 VOLUME "/module"
 WORKDIR "/module"
 
+VOLUME "/go/pkg/mod"
+
 ENTRYPOINT ["gomobile"]
